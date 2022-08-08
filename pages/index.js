@@ -17,7 +17,7 @@ export default function Home() {
         <main className={styles.main}>
           <div className={styles.group}>
             <h3>Private Group</h3>
-            <h2><em>Biệt Đội e-sốp quần què</em></h2>
+            <h2><em>Biet Đoi e-sop quan que</em></h2>
             <p>Greetings to everyone! This DRAMA-FREE group is for anyone who likes to play airsoft. We live locally within San Jose and typically play at Gamepod Combat Zone or CQB City. Don't let the Vietnamese scare you as we accept ANYONE regardless of their background. All we ask in return is your utmost respect when playing with us. So what are you waiting for? Join us now!</p>
 
             <div className={styles.btns}>
