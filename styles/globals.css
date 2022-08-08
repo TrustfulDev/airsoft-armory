@@ -1,9 +1,19 @@
+/* Weights: 400, 800 */
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+
+:root {
+  --color-yellow: #ffcc01;
+  --color-white: #f8f9fa;
+  --color-black: #121215;
+  --color-grey: #1f1e22;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--color-white);
+  background-color:var(--color-grey);
 }
 
 a {
@@ -13,6 +23,8 @@ a {
 
 * {
   box-sizing: border-box;
+  transition: 0.3s;
+  font-family: 'Coda', cursive;
 }
 
 @media (prefers-color-scheme: dark) {

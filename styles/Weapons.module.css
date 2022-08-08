@@ -1,0 +1,79 @@
+.container {
+    background-color: var(--color-grey);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 2rem;
+}
+
+.container h2 {
+    margin-bottom: 0;
+    margin-left: 2.5rem;
+}
+
+.fade {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.card {
+    height: auto;
+    min-width: 500px;
+    padding: 40px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.card:hover > img {
+    transform: scale(1.05);
+    border-top: 1px ridge var(--color-yellow);
+    background-color: var(--color-grey);
+}
+
+.carousel {
+    cursor: grab;
+    overflow: hidden;
+    background-color: var(--color-black);
+    border-top: 2px dashed var(--color-yellow);
+    border-bottom: 2px dashed var(--color-yellow);
+}
+
+.inner_carousel {
+    display: flex;
+    background-color: var(--color-black);
+    transition: none;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 1930px) {
+    .fade {
+        gap: 100px;
+    }
+
+    .card {
+        min-width: 650px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .fade {
+        gap: 10px;
+    }
+    
+    .card {
+        min-width: 430px;
+        padding-left: 0;
+    }
+     
+    .inner_carousel {
+        margin-left: -15px;
+    }
+}
