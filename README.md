@@ -10,6 +10,7 @@
 ## Notes
 - Had issues with using height: 100vh, had to substitute it with padding-top
 - Vietnamese tone marks and symbols would not display properly
+- Having issues with the pictures in vercel
 - Overall I still need to understand all the concepts in learning objectives
 
 ## Packages Used

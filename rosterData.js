@@ -14,7 +14,7 @@ export const rosterData = [
     {
         key: 'Phi',
         name: 'Phi Vu',
-        img: '/people/phi.png',
+        img: '/people/phi.jpg',
         status: 'Active',
         primary: '/guns/primary/phiPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
@@ -26,7 +26,7 @@ export const rosterData = [
     {
         key: 'Justin',
         name: 'Justin Dang',
-        img: '/people/justin.png',
+        img: '/people/justin.jpg',
         status: 'Active',
         primary: '/guns/primary/stevenPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
@@ -38,7 +38,7 @@ export const rosterData = [
     {
         key: 'JJ',
         name: 'JJ Gaerlan',
-        img: '/people/jj.png',
+        img: '/people/jj.jpg',
         status: 'MIA',
         primary: '/guns/primary/jjPrimary.png',
         sidearm: '/guns/sidearms/jjPM.png',
@@ -50,7 +50,7 @@ export const rosterData = [
     {
         key: 'Lou',
         name: 'Lou Nguyen',
-        img: '/people/lou.png',
+        img: '/people/lou.jpg',
         status: 'Deceased',
         primary: '/guns/primary/stevenPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
@@ -62,7 +62,7 @@ export const rosterData = [
     {
         key: 'Phat',
         name: 'Phát Trầnn',
-        img: '/people/phat.png',
+        img: '/people/phat.jpg',
         status: 'Active',
         primary: '/guns/primary/jjPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
@@ -74,7 +74,7 @@ export const rosterData = [
     {
         key: 'Anh',
         name: 'Anh Nguyen',
-        img: '/people/anh.png',
+        img: '/people/anh.jpg',
         status: 'Active',
         primary: '/guns/primary/stevenPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
@@ -86,7 +86,7 @@ export const rosterData = [
     {
         key: 'Ricky',
         name: 'Ricky Bờm Trần',
-        img: '/people/ricky.png',
+        img: '/people/ricky.jpg',
         status: 'Active',
         primary: '/guns/primary/jjPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
@@ -98,7 +98,7 @@ export const rosterData = [
     {
         key: 'Khoa',
         name: 'Khoa',
-        img: '/people/khoa.png',
+        img: '/people/khoa.jpg',
         status: 'Active',
         primary: '/guns/primary/phiPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
@@ -110,7 +110,7 @@ export const rosterData = [
     {
         key: 'Sandy',
         name: 'Sandy Trinh',
-        img: '/people/sandy.png',
+        img: '/people/sandy.jpg',
         status: 'Active',
         primary: '/guns/primary/phiPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
@@ -122,7 +122,7 @@ export const rosterData = [
     {
         key: 'Jason',
         name: 'Jason Nguyen',
-        img: '/people/jason.png',
+        img: '/people/jason.jpg',
         status: 'Active',
         primary: '/guns/primary/jjPrimary.png',
         sidearm: '/guns/sidearms/phiGlock.png',
