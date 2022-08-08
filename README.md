@@ -1,4 +1,5 @@
 ### Airsoft Armory
+- Only 2-3 people have their entire loadouts on the site, I'll update the website as people send their pictures!
 
 ## Learning Objectives
 - Understand next.js
