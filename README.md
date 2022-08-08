@@ -8,9 +8,11 @@
 - File/Folder structure
 
 ## Notes
+- Overall mobile responsiveness could use some work
 - Had issues with using height: 100vh, had to substitute it with padding-top
 - Vietnamese tone marks and symbols would not display properly
-- Having issues with the pictures in vercel
+- Pictures load slow on Vercel (Not sure if its a problem with the code or vercel)
+- Having issues with using .PNG on Vercel (swapped to jpg)
 - Overall I still need to understand all the concepts in learning objectives
 
 ## Packages Used

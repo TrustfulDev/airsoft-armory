@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 6rem;
+    height: 100vh;
 
     background-color: var(--color-grey);
     color: var(--color-white);
@@ -216,7 +216,12 @@
 }
 
 @media screen and (max-width: 510px) {
-    .container {
-        padding-top: 3rem;
+    .main {
+        min-height: 0;
+        padding-bottom: 1rem;
+    }
+
+    .btns {
+        padding-top: 1rem;
     }
 }
