@@ -33,7 +33,7 @@ const Person = ({ roster }) => {
             </Head>
             <FadeIn transitionDuration={500} delay={200} className={styles.left}>
                 <div className={styles.image_container}>
-                    <Image src={roster.img} alt={roster.name} layout='fill' objectFit='cover' priority/>
+                    <Image src={roster.img} alt={roster.name} layout='fill' objectFit='cover'/>
                 </div>
                 <h1>{ roster.name }</h1>
                 <h2>{ roster.status }</h2>
