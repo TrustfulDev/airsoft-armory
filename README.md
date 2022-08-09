@@ -3,12 +3,12 @@
 
 ## Learning Objectives
 - Understand next.js
-- Server Side Rendering
 - Dynamic Routing
 - Static site generation
 - File/Folder structure
 
 ## Notes
+- It seems like the first website visit will have slow loading images, but it will be fast afterwards
 - Overall mobile responsiveness could use some work
 - Had issues with using height: 100vh, had to substitute it with padding-top
 - Vietnamese tone marks and symbols would not display properly
