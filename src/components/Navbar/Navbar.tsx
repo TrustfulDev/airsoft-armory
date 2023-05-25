@@ -10,11 +10,18 @@ export const Navbar = () => {
 
     useEffect(() => {
         let mainElement = document.getElementById("main");
-        open ? mainElement?.classList.add("blur") : mainElement?.classList.remove("blur");
+        let footerElement = document.getElementById("footer");
+        if (open) {
+            mainElement?.classList.add("blur");
+            footerElement?.classList.add("blur");
+         } else {
+            mainElement?.classList.remove("blur");
+            footerElement?.classList.remove("blur");
+         }
     }, [open]);
 
     return (
-        <header className={styles.header}>
+        <header className={styles.container}>
             <h1>Toy Soldiers</h1>
 
             <nav className={ open ? styles.open : styles.close }>
@@ -30,7 +37,7 @@ export const Navbar = () => {
                 </Link>
 
                 <Link 
-                    href="/" 
+                    href="/team" 
                     className={ active === 1 ? styles.active : "" }
                     onClick={() => {
                         setActive(1);
@@ -41,7 +48,7 @@ export const Navbar = () => {
                 </Link>
 
                 <Link 
-                    href="/" 
+                    href="/learn" 
                     className={ active === 2 ? styles.active : "" }
                     onClick={() => {
                         setActive(2);
@@ -52,7 +59,7 @@ export const Navbar = () => {
                 </Link>
 
                 <Link 
-                    href="/" 
+                    href="/zones" 
                     className={ active === 3 ? styles.active : "" }
                     onClick={() => {
                         setActive(3);
@@ -63,7 +70,7 @@ export const Navbar = () => {
                 </Link>
 
                 <Link 
-                    href="/" 
+                    href="/contact" 
                     className={ active === 4 ? styles.active : "" }
                     onClick={() => {
                         setActive(4);

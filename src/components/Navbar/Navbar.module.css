@@ -1,5 +1,5 @@
 /* Header Elements */
-.header { 
+.container { 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,13 +8,13 @@
     z-index: 10;
 }
 
-.header h1 {
+.container h1 {
     font-size: 2rem;
     pointer-events: none;
 }
 
 /* Nav & Link Elements */
-.header nav {
+.container nav {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
@@ -23,14 +23,14 @@
     font-size: 1.25rem;
 }
 
-.header nav a {
+.container nav a {
     position: relative;
     padding: 0.2rem 0;
     transition: color 150ms ease-in-out;
     z-index: 5;
 }
 
-.header nav a::after {
+.container nav a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -43,7 +43,7 @@
     transition: width 150ms ease-in-out;
 }
 
-.header nav a:hover:after  {
+.container nav a:hover:after  {
     width: 50%;
 }
 
@@ -105,11 +105,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .header {
+    .container {
         padding: 1rem 2rem;
     }
 
-    .header nav {
+    .container nav {
         flex-direction: column;
         align-items: center;
         margin: 0;
@@ -122,9 +122,10 @@
         background-color: var(--dark-grey);
         border-top-left-radius: 16px;
         border-bottom-left-radius: 16px;
+        z-index: 4;
     }
 
-    .header nav::after {
+    .container nav::after {
         content: '';
         position: absolute;
         top: 0;
@@ -177,7 +178,7 @@
 }
 
 @media screen and (max-width: 400px) {
-    .header nav {
+    .container nav {
         width: 75%;
     }
 }

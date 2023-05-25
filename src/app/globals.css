@@ -4,12 +4,14 @@
 
   --black: #111111;
   --dark-grey: #2F2F2F;
-  --grey: #3B3C36;
+
+  /* White, 75% */
   --white: #F6F6F6;
+  --faded-white: rgba(246, 246, 246, 0.75);
+
+  /* Gold, 50%  */
   --gold: #FFCB74;
   --faded-gold: #ffcb7480;
-  --yellow: #E3C567;
-  --faded-yellow: #e3c56780;
 }
 
 * {
@@ -23,14 +25,20 @@
 html,
 body {
   max-width: 100vw;
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: var(--gold) var(--light-grey);
+}
+
+html {
+  overflow: hidden;
 }
 
 body {
   color: var(--white);
   background-color: var(--dark-grey);
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold) var(--dark-grey);
 }
 
 a {
@@ -39,5 +47,10 @@ a {
 }
 
 .blur {
-  filter: grayscale(1);
+  filter: grayscale(1) blur(1px);
+  transition: filter 150ms ease-in;
+}
+
+#main {
+  padding: 0 3rem;
 }

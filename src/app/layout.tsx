@@ -1,5 +1,5 @@
 import './globals.css';
-import { Navbar } from "@/components";
+import { Navbar, Footer } from "@/components";
 
 export const metadata = {
   title: 'Toy Soliders',
@@ -23,6 +23,8 @@ export default function RootLayout({
         <main id="main">
           {children}
         </main>
+
+        <Footer />
       </body>
     </html>
   )
