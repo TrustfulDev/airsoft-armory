@@ -9,6 +9,14 @@
     background-color: var(--faded-gold);
 }
 
+.container a {
+    transition: color 150ms ease-in-out;
+}
+
+.container a:hover {
+    color: var(--gold);
+}
+
 /* The Top */
 .top {
     padding: 2rem 3rem;
@@ -95,11 +103,23 @@
     gap: 1rem;
 }
 
-.temp {
+.icon {
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+}
+
+.iconBox {
     width: 35px;
     height: 35px;
     border-radius: 6px;
     background-color: var(--gold);
+    padding: 0.4rem;
+    transition: transform 150ms ease-in-out;
+}
+
+.iconBox:hover {
+    transform: translateY(-3px);
 }
 
 @media screen and (max-width: 650px) {

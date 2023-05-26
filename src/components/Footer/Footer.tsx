@@ -1,5 +1,6 @@
 import styles from './Footer.module.css';
 import Link from "next/link";
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaRegIdCard } from 'react-icons/fa';
 
 export const Footer = () => {
     return (
@@ -40,10 +41,10 @@ export const Footer = () => {
             <div className={styles.bottom}>
                 <p className={styles.rights}><span className={styles.copyright}>&#169;</span> 2023 Trustful Dev - All Rights Reserved</p>
                 <div className={styles.icons}>
-                    <div className={styles.temp}></div>
-                    <div className={styles.temp}></div>
-                    <div className={styles.temp}></div>
-                    <div className={styles.temp}></div>
+                    <a href="https://github.com/TrustfulDev" target="_blank" rel="noopener noreferrer" className={styles.iconBox}><FaGithub className={styles.icon} /></a>
+                    <a href="https://www.linkedin.com/in/vu-steven/" target="_blank" rel="noopener noreferrer" className={styles.iconBox}><FaLinkedinIn className={styles.icon} /></a>
+                    <a href="https://www.facebook.com/stevenvu123" target="_blank" rel="noopener noreferrer" className={styles.iconBox}><FaFacebookF className={styles.icon} /></a>
+                    <a href="https://trustfuldev.github.io/stevenvu/" target="_blank" rel="noopener noreferrer" className={styles.iconBox}><FaRegIdCard className={styles.icon} /></a>
                 </div>
             </div>
         </footer>
