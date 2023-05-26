@@ -54,3 +54,20 @@ a {
 #main {
   padding: 0 3rem;
 }
+
+@media screen and (max-width: 1000px) {
+  #main {
+    padding: 0 2rem;
+  }
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  color: var(--black);
+  background-color: var(--gold);
+
+  font-size: 1.375rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}

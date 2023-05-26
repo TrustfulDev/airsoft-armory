@@ -1,0 +1,61 @@
+/* Borders for the InfoBox */
+.container {
+    position: relative;
+    min-width: 350px;
+    aspect-ratio: 1/1;
+
+    border: 1px solid var(--gold);
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container::after {
+    content: '';
+    border: 1px solid var(--faded-gold);
+    border-radius: 9px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+}
+
+.icon {
+    font-size: 6rem;
+    margin-bottom: 0.75rem;
+    color: var(--gold);
+}
+
+.container p {
+    color: var(--faded-white);
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 1921px) {
+    .container {
+        min-width: 500px;
+    }
+
+    .container h3 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        min-width: unset;
+        width: 100%;
+    }
+}
