@@ -115,7 +115,7 @@
     border-radius: 6px;
     background-color: var(--gold);
     padding: 0.4rem;
-    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out !important;
 }
 
 .iconBox:hover {
