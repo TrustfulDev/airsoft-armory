@@ -1,5 +1,5 @@
 ## Toy Soldiers - Airsoft Armory v2
-**`Next.js`** **`Typescript`** **`Vercel`** <br/><br/>
+**`Next.js`** **`Typescript`** **`Vercel`** **`Postgres SQL`** <br/><br/>
 A showcase website for the airsoft team Toy Soldiers
 - View each team member with their gear
 - Learn the basics of airsoft
