@@ -5,8 +5,8 @@ _Vercel's new Serverless Postgres storage feature_
 ### Conceptual Design - Initial Entities
 The initial entities for this project is: Member, Zone, and Lesson
 - Member: memberID, name, tag, status, rank, preferredType
-- Zone: zoneID, name, location, website, price, rentals, reservations, playtime, rounds, desc
-- Lesson: lessonID, title, (headers, details)
+- Zone: zoneID, name, pic, location, website, rentals, reservations, breakTime, distance, price, playtime, rounds, size, descr, thoughts
+- Lesson: lessonID, title, tag, (headers, details), pic
 
 Since this project is for learning purposes, the database will stay small and simple.
 The business rules are as follow:
@@ -27,8 +27,7 @@ Thankfully, all entities are already in 2NF as each non-key attribute fully depe
 Thankfully, all entities are already in 3NF as there are no non-key attributes depending on another non-key attribute
 
 ## Physical Design
-There isn't a high volume of data or enough information about data frequency/usage to think about denormalization.
-Thus, this portion will simply include the final tables with the proper data types and relationships (foreign keys).
+There isn't a high volume of data or enough information about data frequency/usage to think about denormalization. However, postgres allows the usage of an array datatype. Thus, we can denormalize what we did in 1NF by recombining the (headers, details) back into the Lesson table. This cuts down the need of using a join to grab topics that correspond with each lesson.
 | Member |  |  |
 | ------ | ------ | ------ |
 | PK | memberID | INT |
@@ -42,31 +41,28 @@ Thus, this portion will simply include the final tables with the proper data typ
 | ------ | ------ | ------ |
 | PK | zoneID | INT |
 |  | name | VARCHAR(255) |
+|  | pic | VARCHAR(255) |
 |  | location | VARCHAR(255) |
 |  | website | VARCHAR(255) |
-|  | price | INT |
 |  | rentals | BOOLEAN |
 |  | reservations | BOOLEAN |
+|  | breakTime | INT |
+|  | distance | VARCHAR(255) |
+|  | price | INT |
 |  | playtime | INT |
 |  | rounds | INT |
-|  | desc | VARCHAR(255) |
+|  | size | INT |
+|  | descr | VARCHAR(255) |
+|  | thoughts | VARCHAR(255) |
 
 | Lesson |  |  |
 | ------ | ------ | ------ |
 | PK | lessonID | INT |
 |  | title | VARCHAR(255) |
-
-| Topic |  |  |
-| ------ | ------ | ------ |
-| PK | topicID | INT |
-| PK, FK | lessonID | INT |
-|  | header | VARCHAR(255) |
-|  | details | VARCHAR(255) |
-
-The only relationship is between Lesson and Topic. 
-Lesson : Topic -> 1:M
-
-> Note that a business rule only allows up to 4 topics per lesson
+|  | tag | VARCHAR(255) |
+|  | header | VARCHAR[] |
+|  | details | VARCHAR[] |
+|  | pic | VARCHAR(255) |
 
 ## SQL Implementation
 Please check the toySoldiers.sql in the root directory to see the sql code.

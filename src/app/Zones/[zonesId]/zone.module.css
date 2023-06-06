@@ -1,0 +1,147 @@
+.container {
+    position: relative;
+
+    display: flex;
+    min-height: calc(100vh - 4.4rem);
+    padding-bottom: 2rem;
+}
+
+.left, .right {
+    flex: 1;
+    position: relative;
+}
+
+.left {
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pic {
+    border: 5px ridge var(--gold);
+    border-radius: 16px;
+    object-fit: cover;
+
+    position: relative !important;
+}
+
+.amenities {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.amenities svg {
+    font-size: 3rem;
+}
+
+.amenities div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    min-width: 100px;
+}
+
+/* Right Elements */
+.right {
+    padding: 2rem;
+}
+
+.right h1 {
+    font-size: 4rem;
+    line-height: 0.9;
+}
+
+.right h2 {
+    color: var(--faded-white);
+    line-height: 1;
+}
+
+.right hr {
+    margin: 1rem 0;
+    border: none;
+    height: 2px;
+    background-color: var(--gold);
+}
+
+.right p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.right ul {
+    list-style: inside;
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.right ul li {
+    margin: 0.25rem 0;
+}
+
+.right ul li a {
+    text-decoration: underline;
+}
+
+.thoughts {
+    margin-top: 2rem;
+}
+
+.thoughts h3 {
+    font-size: 1.5rem;
+    color: var(--gold);
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        max-width: 100%;
+        flex-direction: row;
+    }
+    
+    .amenities {
+        flex-direction: column;
+    }
+
+    .right {
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left {
+        flex-direction: column;
+    }
+    
+    .amenities {
+        flex-direction: row;
+    }
+
+    .right h1 {
+        font-size: 2.5rem;
+    }
+    
+    .right h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .amenities svg {
+        font-size: 2rem;
+    }
+
+    .amenities div {
+        font-size: 0.75rem;
+        min-width: 80px;
+    }
+    
+    .right h2 {
+        font-size: 1rem;
+    }
+}

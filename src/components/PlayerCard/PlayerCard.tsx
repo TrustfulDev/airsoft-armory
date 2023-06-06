@@ -1,9 +1,10 @@
 import styles from './PlayerCard.module.css';
 import Image from "next/image";
+import Link from "next/link";
 
 export const PlayerCard = (props: { img: string, alt: string, name: string, tag: string }) => {
     return (
-        <div className={styles.container}>
+        <Link href={`/team/${props.name.replace(/\s+/g, '')}`} className={styles.container}>
             <Image 
             className={styles.pic}
                 src={props.img}
@@ -17,6 +18,6 @@ export const PlayerCard = (props: { img: string, alt: string, name: string, tag:
                 <h1>{props.name}</h1>
                 <p>{props.tag}</p>
             </div>
-        </div>
+        </Link>
     );
 };

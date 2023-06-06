@@ -4,6 +4,7 @@ export { Footer } from './Footer/Footer';
 
 // Team Components
 export { PlayerCard } from './PlayerCard/PlayerCard';
+export { Skills } from './Skills/Skills';
 
 // Learn components
 export { Lesson } from './Lesson/Lesson';

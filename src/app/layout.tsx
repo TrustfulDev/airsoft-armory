@@ -2,7 +2,7 @@ import './globals.css';
 import { Navbar, Footer } from "@/components";
 
 export const metadata = {
-  title: 'Toy Soliders',
+  title: 'Toy Soldiers',
   description: 'The Best Bay Area Airsoft Group.',
 }
 

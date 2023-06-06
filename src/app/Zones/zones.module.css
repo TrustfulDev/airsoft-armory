@@ -25,14 +25,14 @@
     min-height: calc(100vh - 11.2rem);
 }
 
-.container div {
+.boxes {
     position: relative;
     overflow: hidden;
     border-radius: 6px;
     cursor: pointer;
 }
 
-.container div::after {
+.boxes::after {
     content: "";
     position: absolute;
     top: 0;
@@ -42,14 +42,14 @@
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-.container div h2 {
+.boxes h2 {
     position: absolute;
     top: 1.5rem;
     padding: 1rem 8rem 1rem 1.5rem;
     background: linear-gradient(90deg, var(--dark-grey) 70%, rgb(47, 47, 47, 0.05) 100%);
 }
 
-.container div h2::after {
+.boxes h2::after {
     content: '';
     position: absolute;
     top: 0;
@@ -60,7 +60,7 @@
     background: linear-gradient(90deg, var(--gold) 70%, rgb(47, 47, 47, 0.05) 100%);
 }
 
-.container div h2::before {
+.boxes h2::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -71,7 +71,7 @@
     background: linear-gradient(90deg, var(--gold) 70%, rgb(47, 47, 47, 0.05) 100%);
 }
 
-.container div:hover .pic {
+.boxes:hover .pic {
     transform: scale(1.05);
 }
 
@@ -117,12 +117,12 @@
         flex-direction: column;
     }
 
-    .container div {
+    .boxes {
         width: 100%;
         height: 400px;
     }
 
-    .container div h2 {
+    .boxes h2 {
         padding: 1rem 6.9rem 1rem 1rem;
         font-size: 1rem;
     }
