@@ -2,15 +2,16 @@ import styles from './PlayerCard.module.css';
 import Image from "next/image";
 import Link from "next/link";
 
-export const PlayerCard = (props: { img: string, alt: string, name: string, tag: string }) => {
+export const PlayerCard = (props: { id: number, img: string, alt: string, name: string, tag: string }) => {
     return (
-        <Link href={`/team/${props.name.replace(/\s+/g, '')}`} className={styles.container}>
+        <Link className={styles.container}
+            href={{ pathname: `/team/${props.name.replace(/\s+/g, '')}`, query: { member: props.id }} }
+        >
             <Image 
             className={styles.pic}
                 src={props.img}
                 alt={props.alt}
                 fill
-                loading="lazy"
             />
 
             <div className={styles.content}>

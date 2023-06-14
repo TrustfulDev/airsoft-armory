@@ -38,7 +38,7 @@ body {
   color: var(--white);
   background-color: var(--dark-grey);
   scrollbar-width: thin;
-  scrollbar-color: var(--gold) var(--dark-grey);
+  scrollbar-color: var(--gold) var(--black);
 }
 
 a {
@@ -52,12 +52,12 @@ a {
 }
 
 #main {
-  padding: 0 3rem;
+  padding: 1rem 3rem;
 }
 
 @media screen and (max-width: 1000px) {
   #main {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
   }
 }
 
@@ -70,4 +70,5 @@ a {
   font-size: 1.375rem;
   padding: 1rem 2rem;
   cursor: pointer;
+  min-width: 177px;
 }

@@ -1,15 +1,30 @@
 import styles from './team.module.css';
 import { PlayerCard } from "@/components";
 
-const team = () => {
+async function getMembers() {
+    let res = await fetch("http://localhost:3000/api/members");
+    return res.json();
+}
+
+const team = async () => {
+    let members = await getMembers();
+
     return (
         <div className={styles.container}>
-            <PlayerCard 
-                img="/static/members/andy.webp"
-                alt="Andy - Puresins"
-                name="Andy Ngo"
-                tag="@puresins101"
-            />
+            {
+                members.map((e:any, index: number) => {
+                    return (
+                        <PlayerCard 
+                            id={e.memberid}
+                            img={e.pic}
+                            alt="A playercard"
+                            name={e.name}
+                            tag={e.tag}
+                            key={index}
+                        />
+                    )
+                })
+            }
         </div>
     );
 };
