@@ -2,12 +2,28 @@
 CREATE TABLE Member 
 (
     memberID int PRIMARY KEY NOT NULL,
+    pic varchar(255) NOT NULL,
     name varchar(255) NOT NULL,
     tag varchar(255) NOT NULL,
-    status boolean NOT NULL,
+    descr text NOT NULL,
+    agility int NOT NULL,
+    endurance int NOT NULL,
+    marksmanship int NOT NULL,
+    perception int NOT NULL,
     rank int NOT NULL,
-    preferredType varchar(255) NOT NULL
+    guntype varchar(255) NOT NULL,
+    cautious boolean NOT NULL,
+    stealth boolean NOT NULL,
+    primarygun varchar(255) NOT NULL,
+    secondarygun varchar(255) NOT NULL,
+    eye varchar(255) NOT NULL,
+    rig varchar(255) NOT NULL
 );
+
+INSERT INTO Member (memberID, pic, name, tag, descr, agility, endurance, marksmanship, perception, rank, guntype, cautious, stealth, primarygun, secondarygun, eye, rig) VALUES (101, '/static/members/andyNgo.webp', 'Andy Ngo', '@PureSins101', 'Specifically designated, organized, selected, trained, and equipped to secure, contain, and protect, Andy is a force to be reckoned with on the battlefield. With unwavering dedication and a comprehensive skill set honed through rigorous training, he stands at the forefront of the SCP Foundation, exemplifying the pinnacle of airsoft excellence. Andy''s specialized equipment and tactical prowess ensure the successful containment of any breaches.', 8, 8, 9, 9, 3, 'AEG', false, false, 'Arcturus AK-12 (Perun MOSFET)', 'WE 1911', 'Leyelux AG02 Ballistic Shooting Goggles (tinted)', 'Viper Tactical VX Gen 2');
+INSERT INTO Member (memberID, pic, name, tag, descr, agility, endurance, marksmanship, perception, rank, guntype, cautious, stealth, primarygun, secondarygun, eye, rig) VALUES (102, '/static/members/alexNguyen.webp', 'Alexei Nysan', '@feral.heir', 'Embodying the essence of direct action and force-on-force gameplay, Alex is relentless in his pursuit of victory. He employs attrition as a strategic tool, exerting continuous pressure on fortified positions to gain leverage. This player excels in anchoring and defending heavily contested areas, preventing counterattacks and preserving valuable territory. Their approach to accuracy is defined by a barrage of volleys, unleashing a high volume of fire to overwhelm opponents.', 4, 7, 6, 3, 3, 'AEG/GBB', false, false, 'G&G ARP9 1.0', 'EMG Strike Industries ARK17', 'BOLLE X800 and/or Valken Sierra', '1TG FYR');
+INSERT INTO Member (memberID, pic, name, tag, descr, agility, endurance, marksmanship, perception, rank, guntype, cautious, stealth, primarygun, secondarygun, eye, rig) VALUES (103, '/static/members/phiVu.webp', 'Phi Vu', '@itzphi', 'As a K9 handler, Phi''s partnership with his trusty canine companion adds a whole new dimension to his gameplay. Whether it''s locating hidden enemies, sniffing out strategic positions, or offering vital tactical assistance, Phi''s expertise as a K9 handler combined with his unwavering dedication to supporting his team make him an invaluable asset on the airsoft field. With his canine partner by his side, Phi embodies the true spirit of teamwork, bringing a new level of synergy to the game.', 7, 8, 6, 8, 2, 'HPA', true, true, 'A&K MK46 / King Arms TWS', 'None', 'Helmet Face Shield / Safety Glasses', 'FCPC V5');
+INSERT INTO Member (memberID, pic, name, tag, descr, agility, endurance, marksmanship, perception, rank, guntype, cautious, stealth, primarygun, secondarygun, eye, rig) VALUES (104, '/static/members/stevenVu.webp', 'Steven Vu', '@trustfuldev', 'With a penchant for stealth and a keen eye for tactics, Steven''s playstyle revolves around flanking maneuvers and embracing the shadows. Whether it''s infiltrating enemy lines undetected or strategically positioning themselves to gain the upper hand, Steven''s ability to blend into the environment and strike from unexpected angles makes them a formidable force on the field. Armed with patience, agility, and a knack for exploiting weaknesses, Steven is a true master of the stealthy art of airsoft warfare.', 9, 5, 3, 10, 1, 'GBB/HPA', true, true, 'KWA KMP9', 'None', 'eye pro', 'Matrix S.D.E.U. Ultra Light Weight Airsoft Tactical Vest');
 
 -- Zone Table
 CREATE TABLE Zone

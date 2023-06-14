@@ -4,7 +4,7 @@ _Vercel's new Serverless Postgres storage feature_
 ## Design Process
 ### Conceptual Design - Initial Entities
 The initial entities for this project is: Member, Zone, and Lesson
-- Member: memberID, name, tag, status, rank, preferredType
+- Member: memberID, pic, name, tag, descr, agility, endurance, marksmanship, perception, rank, guntype, cautious, stealth, primarygun, secondarygun, eye, rig
 - Zone: zoneID, name, pic, location, website, rentals, reservations, breakTime, distance, price, playtime, rounds, size, descr, thoughts
 - Lesson: lessonID, title, tag, (headers, details), pic
 
@@ -31,11 +31,22 @@ There isn't a high volume of data or enough information about data frequency/usa
 | Member |  |  |
 | ------ | ------ | ------ |
 | PK | memberID | INT |
+|  | pic | VARCHAR(255) |
 |  | name | VARCHAR(255) |
 |  | tag | VARCHAR(255) |
-|  | status | BOOLEAN |
+|  | descr | TEXT |
+|  | agility | INT |
+|  | endurance | INT |
+|  | marksmanship | INT |
+|  | perception | INT |
 |  | rank | INT |
-|  | preferredType | VARCHAR(255) |
+|  | guntype | VARCHAR(255) |
+|  | cautious | BOOLEAN |
+|  | stealth | BOOLEAN |
+|  | primarygun | VARCHAR(255) |
+|  | secondarygun | VARCHAR(255) |
+|  | eye | VARCHAR(255) |
+|  | rig | VARCHAR(255) |
 
 | Zone |  |  |
 | ------ | ------ | ------ |
@@ -52,8 +63,8 @@ There isn't a high volume of data or enough information about data frequency/usa
 |  | playtime | INT |
 |  | rounds | INT |
 |  | size | INT |
-|  | descr | VARCHAR(255) |
-|  | thoughts | VARCHAR(255) |
+|  | descr | TEXT |
+|  | thoughts | TEXT |
 
 | Lesson |  |  |
 | ------ | ------ | ------ |
