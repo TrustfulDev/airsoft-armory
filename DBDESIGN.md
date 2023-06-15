@@ -10,8 +10,8 @@ The initial entities for this project is: Member, Zone, and Lesson
 
 Since this project is for learning purposes, the database will stay small and simple.
 The business rules are as follow:
-> Rule 1: A lesson can only have up to four topics
-> Rule 2: All attributes, except for website, needs to be filled out (NOT NULL)
+- Rule 1: A lesson can only have up to four topics
+- Rule 2: All attributes, except for website, needs to be filled out (NOT NULL)
 
 ### Logical Design - Normalization
 #### 1NF - Repeating Groups

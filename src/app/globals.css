@@ -41,6 +41,19 @@ body {
   scrollbar-color: var(--gold) var(--black);
 }
 
+/* For Chrome */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold);
+  border-radius: 6px;
+  border: transparent;
+}
+
 a {
   color: inherit;
   text-decoration: none;

@@ -1,7 +1,295 @@
+/* First Section of the Home Page */
 .hero {
-  height: calc(100vh - 4.4rem);
+  height: calc(100vh - 6.4rem);
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.herobg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100vw;
+  height: calc(100vh - 4.5rem);
+
+  z-index: -1;
+  object-fit: cover;
+  object-position: bottom;
+  opacity: 0.15;
+
+  margin-left: -3rem;
+  margin-top: -1rem;
 }
 
 .info {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  gap: 1rem;
+}
+
+.info h1 {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.info h2 {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.info p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0.5rem 0;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btns hr {
+  height: 2px;
+  width: 20px;
+  background-color: var(--gold);
+  border: none;
+}
+
+@media screen and (max-width: 580px) {
+  .btns {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .btns hr {
+    display: none;
+  }
+}
+
+/* Card Elements */
+.cards {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: calc(100vh - 26rem);
+
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  z-index: -1;
+}
+
+.cards div {
+  background-color: var(--gold);
+  border-radius: 5px;
+  /* Maybe make the radius 16px? */
+  flex: 1;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.pic {
+  object-fit: cover;
+}
+
+.tallCard {
+  height: 100%;
+}
+
+.smallCard {
+  height: 75%;
+}
+
+@media screen and (max-width: 1125px) {
+  .info h1 {
+    font-size: 6rem;
+  }
+  
+  .info h2 {
+    font-size: 2rem;
+  }
+  
+  .info p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cards {
+    display: none;
+  }
+}
+
+@media (max-height: 915px) {
+  .cards {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .info {
+    align-items: flex-start;
+    text-align: left;
+
+    gap: 1rem;
+  }
+
+  .info h1 {
+    font-size: 3.1rem;
+  }
+  
+  .info h2 {
+    font-size: 1.2rem;
+  }
+  
+  .info p {
+    font-size: 1.2rem;
+  }
+}
+
+/* The video */
+.middle {
+  position: relative;
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  overflow: hidden;
+  height: 500px;
+  width: 100vw;
+  max-height: 500px;
+  margin-left: -3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tint {
+  position: absolute;
+  background-color: rgba(47, 47, 47, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.vid {
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Second Section of the Home Page */
+.next {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.box {
+  flex: 1;
+}
+
+.boxhead {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0 1rem;
+}
+
+.boxhead svg {
+  font-size: 3rem;
+}
+
+.boxhead hr {
+  border: none;
+  background-color: var(--gold);
+  height: 2px;
+  width: 100%;
+}
+
+.content {
+  padding: 0 0 1rem 5rem;
+}
+
+.content h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.content h3 {
+  color: var(--faded-white);
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.content p {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1428px) {
+  .next {
+    gap: 1rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+  
+  .content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .next {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .boxhead {
+    padding: 0;
+  }
+
+  .content {
+    padding: 0 0 0 3.5rem;
+  }
+}
+
+/* Adjust video width */
+@media screen and (max-width: 1000px) {
+  .herobg,
+  .middle {
+    margin-left: -2rem;
+  }
 }
