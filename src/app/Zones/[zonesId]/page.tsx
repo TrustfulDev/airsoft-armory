@@ -29,7 +29,7 @@ const Zone = (props: any) => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`/api/zone?zone=${props.searchParams.zone}`)
+        fetch(`https://airsoft-armory.vercel.app//api/zone?zone=${props.searchParams.zone}`)
             .then((res) => res.json())
             .then((data) => {
                 setZoneData(data);

@@ -33,7 +33,7 @@ const Member = async (props: any) => {
     
     useEffect(() => {
         setIsLoading(true);
-        fetch(`/api/member?member=${props.searchParams.member}`)
+        fetch(`https://airsoft-armory.vercel.app//api/member?member=${props.searchParams.member}`)
             .then((res) => res.json())
             .then((data) => {
                 setMemberData(data);
