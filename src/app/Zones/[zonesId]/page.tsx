@@ -29,7 +29,7 @@ const Zone = (props: any) => {
 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`http://localhost:3000/api/zone?zone=${props.searchParams.zone}`)
+        fetch(`${process.env.VERCEL_URL}/api/zone?zone=${props.searchParams.zone}`)
             .then((res) => res.json())
             .then((data) => {
                 setZoneData(data);

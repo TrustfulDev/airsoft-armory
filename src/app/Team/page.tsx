@@ -2,7 +2,7 @@ import styles from './team.module.css';
 import { PlayerCard } from "@/components";
 
 async function getMembers() {
-    let res = await fetch("http://localhost:3000/api/members");
+    let res = await fetch(`${process.env.VERCEL_URL}/api/members`);
     return res.json();
 }
 

@@ -7,7 +7,7 @@ import { Lesson } from "@/components";
 */
 
 async function getLessons() {
-    let res = await fetch("http://localhost:3000/api/lessons");
+    let res = await fetch(`${process.env.VERCEL_URL}/api/lessons`);
     return res.json();
 }
 
