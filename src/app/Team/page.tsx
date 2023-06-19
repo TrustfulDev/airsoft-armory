@@ -10,7 +10,7 @@ async function getMembers() {
     // return await (await res.GET()).json();
 }
 
-const team = async () => {
+export default async function Page() {
     let members = await getMembers();
 
     return (
@@ -32,5 +32,3 @@ const team = async () => {
         </div>
     );
 };
-
-export default team;

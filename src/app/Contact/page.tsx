@@ -6,7 +6,7 @@ import { BsYinYang, BsPersonFillCheck } from 'react-icons/bs';
 import { FaHandshake, FaBookDead, FaTwitter, FaInstagram } from 'react-icons/fa';
 import { BarReveal } from "@/utils/Reveal";
 
-const contact = () => {
+export default function Page() {
     return (
         <section className={styles.container}>
             <div className={styles.boxes}>
@@ -33,5 +33,3 @@ const contact = () => {
         </section>
     );
 };
-
-export default contact;

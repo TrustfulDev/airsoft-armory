@@ -1,12 +1,11 @@
 "use client"
 import styles from './zones.module.css';
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { staggerContainer, fadeIn } from "@/utils/motion";
 import { motion } from 'framer-motion';
 
-const Zones = () => {
+export default function Page() {
     const router = useRouter();
 
     const handleNav = (props: { path: string}) => {
@@ -73,5 +72,3 @@ const Zones = () => {
         </>
     );
 };
-
-export default Zones;

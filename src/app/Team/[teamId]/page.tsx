@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 
 import { GiRank1, GiRank2, GiRank3, GiAk47, GiCowled, GiKingJuMask, GiNinjaHeroicStance, GiRunningNinja } from 'react-icons/gi';
 
-const Member = async (props: any) => {
+export default function Page(props: any) {
     const [memberData, setMemberData] = useState([{
         pic: '',
         name: '',
@@ -149,5 +149,3 @@ const Member = async (props: any) => {
         </div>
     )
 }
-
-export default Member;
