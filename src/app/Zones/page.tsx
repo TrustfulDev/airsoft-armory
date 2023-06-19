@@ -22,7 +22,7 @@ export default function Page() {
                 viewport={{ once: true, amount: 0.25 }}
             >
                 <motion.div className={`${styles.box1} ${styles.boxes}`} 
-                    onClick={() => handleNav({ path: "/zones/gamepod?zone=201" })}
+                    onClick={() => handleNav({ path: "/Zones/gamepod?zone=201" })}
                     variants={ fadeIn('up', 'spring', 0.0, 0.75) }
                 >
                     <Image 
@@ -38,7 +38,7 @@ export default function Page() {
                 </motion.div>
 
                 <motion.div className={`${styles.box2} ${styles.boxes}`} 
-                    onClick={() => handleNav({ path: "/zones/cqbcity?zone=202" })}
+                    onClick={() => handleNav({ path: "/Zones/cqbcity?zone=202" })}
                     variants={ fadeIn('up', 'spring', 0.1, 0.75) }
                 >
                     <Image 
@@ -54,7 +54,7 @@ export default function Page() {
                 </motion.div>
 
                 <motion.div className={`${styles.box3} ${styles.boxes}`} 
-                    onClick={() => handleNav({ path: "/zones/dsockillhouse?zone=203" })}
+                    onClick={() => handleNav({ path: "/Zones/dsockillhouse?zone=203" })}
                     variants={ fadeIn('up', 'spring', 0.2, 0.75) }
                 >
                     <Image 

@@ -53,6 +53,10 @@
     width: 50%;
 }
 
+.active {
+    color: var(--gold);
+}
+
 @keyframes open-select {
     0% {
         width: 0px;

@@ -1,12 +1,14 @@
 "use client";
 import styles from './Navbar.module.css';
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { useState, useEffect } from 'react';
 import { GrInstagram, GrTwitter } from 'react-icons/gr';
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const pathname = usePathname();
 
     useEffect(() => {
         let mainElement = document.getElementById("main");
@@ -32,30 +34,35 @@ export const Navbar = () => {
             <nav className={ open ? styles.open : styles.close }>
                 <Link 
                     href="/" 
+                    className={pathname === "/" ? `${styles.active}` : ''}
                 >
                     Home
                 </Link>
 
                 <Link 
-                    href="/team" 
+                    href="/Team" 
+                    className={pathname === "/Team" ? `${styles.active}` : ''}
                 >
                     Team
                 </Link>
 
                 <Link 
-                    href="/learn" 
+                    href="/Learn" 
+                    className={pathname === "/Learn" ? `${styles.active}` : ''}
                 >
                     Learn
                 </Link>
 
                 <Link 
-                    href="/zones" 
+                    href="/Zones" 
+                    className={pathname === "/Zones" ? `${styles.active}` : ''}
                 >
                     Zones
                 </Link>
 
                 <Link 
-                    href="/contact" 
+                    href="/Contact" 
+                    className={pathname === "/Contact" ? `${styles.active}` : ''}
                 >
                     Contact
                 </Link>

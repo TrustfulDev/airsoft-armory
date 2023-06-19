@@ -14,7 +14,7 @@ export const Footer = () => {
                 <div className={styles.categories}>
                     <div className={styles.category}>
                         <h3>RESOURCES</h3>
-                        <Link href="/learn">Learn Airsoft</Link>
+                        <Link href="/Learn">Learn Airsoft</Link>
                         <a href="https://github.com/TrustfulDev/airsoft-armory/tree/Version_2" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
                     </div>
 
@@ -28,9 +28,9 @@ export const Footer = () => {
 
                     <div className={styles.category}>
                         <h3>TEAM</h3>
-                        <Link href="/team">About Us</Link>
-                        <Link href="/zones">Events</Link>
-                        <Link href="/contact">Contact Us</Link>
+                        <Link href="/Team">About Us</Link>
+                        <Link href="/Zones">Events</Link>
+                        <Link href="/Contact">Contact Us</Link>
                         <Link href="/">Privacy Policy</Link>
                     </div>
                 </div>

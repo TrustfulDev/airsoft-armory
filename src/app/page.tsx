@@ -119,7 +119,7 @@ export default function Home() {
 
       <section className={styles.next} ref={ref}>
         <BarReveal delay={0}>
-          <Link href="/team" className={styles.box}>
+          <Link href="/Team" className={styles.box}>
             <div className={styles.boxhead}><GiTeamDowngrade /><hr/></div>
 
             <div className={styles.content}>
@@ -132,7 +132,7 @@ export default function Home() {
         </BarReveal>
 
         <BarReveal delay={0}>
-          <Link href="/learn" className={styles.box}>
+          <Link href="/Learn" className={styles.box}>
             <div className={styles.boxhead}><GiGraduateCap /><hr/></div>
 
             <div className={styles.content}>
@@ -145,7 +145,7 @@ export default function Home() {
         </BarReveal>
 
         <BarReveal delay={0}>
-          <Link href="/zones" className={styles.box}>
+          <Link href="/Zones" className={styles.box}>
             <div className={styles.boxhead}><GiTreasureMap /><hr/></div>
 
             <div className={styles.content}>

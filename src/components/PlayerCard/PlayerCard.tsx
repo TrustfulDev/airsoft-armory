@@ -9,7 +9,7 @@ export const PlayerCard = (props: { id: number, img: string, alt: string, name: 
         <BarReveal delay={(props.id-100) * 0.1}>
             <div className={styles.container}>
                 <Link
-                    href={{ pathname: `/team/${props.name.replace(/\s+/g, '')}`, query: { member: props.id }} }
+                    href={{ pathname: `/Team/${props.name.replace(/\s+/g, '')}`, query: { member: props.id }} }
                 >
 
                         <Image 
