@@ -10,7 +10,7 @@ import { staggerContainer, fadeIn } from "@/utils/motion";
 import { useState, useEffect } from 'react';
 import { Loader } from "@/components";
 
-const page = (props: any) => {
+const Zone = (props: any) => {
     const [zoneData, setZoneData] = useState([{
         pic: '',
         breaktime: 0,
@@ -114,4 +114,4 @@ const page = (props: any) => {
     )
 }
 
-export default page;
+export default Zone;

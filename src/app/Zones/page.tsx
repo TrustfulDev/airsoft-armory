@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { staggerContainer, fadeIn } from "@/utils/motion";
 import { motion } from 'framer-motion';
 
-const page = () => {
+const Zones = () => {
     const router = useRouter();
 
     const handleNav = (props: { path: string}) => {
@@ -74,4 +74,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Zones;
