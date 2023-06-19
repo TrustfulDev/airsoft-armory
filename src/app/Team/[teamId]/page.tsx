@@ -29,11 +29,11 @@ export default function Page(props: any) {
         eye: '',
         rig: ''
     }]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
     
     useEffect(() => {
         setIsLoading(true);
-        fetch(`https://airsoft-armory.vercel.app//api/member?member=${props.searchParams.member}`)
+        fetch(`https://airsoft-armory.vercel.app/api/member?member=${props.searchParams.member}`)
             .then((res) => res.json())
             .then((data) => {
                 setMemberData(data);

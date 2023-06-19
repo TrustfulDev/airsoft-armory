@@ -7,7 +7,7 @@ import { Lesson } from "@/components";
 */
 
 async function getLessons() {
-    let res = await fetch(`https://airsoft-armory.vercel.app//api/lessons`);
+    let res = await fetch(`https://airsoft-armory.vercel.app/api/lessons`);
     return res.json();
 
     // let res = await import ("../api/lessons/route");

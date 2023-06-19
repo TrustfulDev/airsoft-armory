@@ -2,7 +2,7 @@ import styles from './team.module.css';
 import { PlayerCard } from "@/components";
 
 async function getMembers() {
-    let res = await fetch(`https://airsoft-armory.vercel.app//api/members`);
+    let res = await fetch(`https://airsoft-armory.vercel.app/api/members`);
     return res.json();
 
     // let res = await import("../api/members/route");

@@ -25,11 +25,11 @@ export default function Page(props: any) {
         website: '',
         thoughts: ''
     }]);
-    const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         setIsLoading(true);
-        fetch(`https://airsoft-armory.vercel.app//api/zone?zone=${props.searchParams.zone}`)
+        fetch(`https://airsoft-armory.vercel.app/api/zone?zone=${props.searchParams.zone}`)
             .then((res) => res.json())
             .then((data) => {
                 setZoneData(data);
