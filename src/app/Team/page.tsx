@@ -2,8 +2,12 @@ import styles from './team.module.css';
 import { PlayerCard } from "@/components";
 
 async function getMembers() {
-    let res = await fetch(`/api/members`);
-    return res.json();
+    // let res = await fetch(`/api/members`);
+    // return res.json();
+
+    let res = await import("../api/members/route");
+
+    return await (await res.GET()).json();
 }
 
 const team = async () => {

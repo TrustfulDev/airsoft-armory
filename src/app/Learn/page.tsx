@@ -7,8 +7,12 @@ import { Lesson } from "@/components";
 */
 
 async function getLessons() {
-    let res = await fetch(`/api/lessons`);
-    return res.json();
+    // let res = await fetch(`/api/lessons`);
+    // return res.json();
+
+    let res = await import ("../api/lessons/route");
+
+    return await (await res.GET()).json();
 }
 
 export default async function learn() {
