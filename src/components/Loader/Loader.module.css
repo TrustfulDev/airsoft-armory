@@ -42,17 +42,6 @@
     font-weight: 600;
     font-size: 2rem;
     text-transform: uppercase;
-    animation: appear 500ms linear;
-}
-
-@keyframes appear {
-    0% {
-        transform: translateX(-1000px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
 }
 
 @keyframes rotate {
