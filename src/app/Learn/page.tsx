@@ -15,7 +15,7 @@ async function getLessons() {
     // return await (await res.GET()).json();
 }
 
-export default async function learn() {
+const page = async () => {
     let lessons = await getLessons();
 
     return (
@@ -37,3 +37,5 @@ export default async function learn() {
         </>
     );
 };
+
+export default page;
