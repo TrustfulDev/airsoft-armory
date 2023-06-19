@@ -1,8 +1,10 @@
+"use client"
 import styles from './contact.module.css';
 import { InfoBox } from "@/components";
 
 import { BsYinYang, BsPersonFillCheck } from 'react-icons/bs';
-import { FaHandshake, FaBookDead } from 'react-icons/fa';
+import { FaHandshake, FaBookDead, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { BarReveal } from "@/utils/Reveal";
 
 const contact = () => {
     return (
@@ -15,16 +17,16 @@ const contact = () => {
             </div>
 
             <div className={styles.info}>
-                <h1>Enlist in the best Bay Area Airsoft Group</h1>
-                <p>No matter what you may want to say or ask, don&#39;t be afraid to shoot us an email! You can find our socials below, but we&#39;ll primarily be using email as the form of contact.</p>
-                <button className="button">Email Us</button>
+                <BarReveal delay={0}><h1>Enlist in the best Bay Area Airsoft Group</h1></BarReveal>
+                <BarReveal delay={0.1}><p>No matter what you may want to say or ask, don&#39;t be afraid to shoot us an email! You can find our socials below, but we&#39;ll primarily be using email as the form of contact.</p></BarReveal>
+                <BarReveal delay={0.2}><a className="button" href="mailto:sssstevenvu@gmail.com" target="_blank" rel="noopener noreferrer">Email Us</a></BarReveal>
 
                 <div className={styles.follow}>
                     <h2>Follow Us</h2>
 
                     <div className={styles.icons}>
-                        <div className={styles.temp}></div>
-                        <div className={styles.temp}></div>
+                        <FaTwitter size={35} className={styles.circles} />
+                        <FaInstagram size={35} className={styles.circles} />
                     </div>
                 </div>
             </div>

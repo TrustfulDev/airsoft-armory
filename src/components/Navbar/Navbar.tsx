@@ -3,9 +3,9 @@ import styles from './Navbar.module.css';
 import Link from "next/link";
 
 import { useState, useEffect } from 'react';
+import { GrInstagram, GrTwitter } from 'react-icons/gr';
 
 export const Navbar = () => {
-    const [active, setActive] = useState(0);
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
@@ -22,68 +22,48 @@ export const Navbar = () => {
 
     return (
         <header className={styles.container}>
-            <h1>Toy Soldiers</h1>
+            <Link 
+                href="/" 
+                className={styles.logo}
+            >
+                Toy Soldiers
+            </Link>
 
             <nav className={ open ? styles.open : styles.close }>
                 <Link 
                     href="/" 
-                    className={ active === 0 ? styles.active : "" }
-                    onClick={() => {
-                        setActive(0);
-                        if (open) setOpen(false);
-                    }}
                 >
                     Home
                 </Link>
 
                 <Link 
                     href="/team" 
-                    className={ active === 1 ? styles.active : "" }
-                    onClick={() => {
-                        setActive(1);
-                        if (open) setOpen(false);
-                    }}
                 >
                     Team
                 </Link>
 
                 <Link 
                     href="/learn" 
-                    className={ active === 2 ? styles.active : "" }
-                    onClick={() => {
-                        setActive(2);
-                        if (open) setOpen(false);
-                    }}
                 >
                     Learn
                 </Link>
 
                 <Link 
                     href="/zones" 
-                    className={ active === 3 ? styles.active : "" }
-                    onClick={() => {
-                        setActive(3);
-                        if (open) setOpen(false);
-                    }}
                 >
                     Zones
                 </Link>
 
                 <Link 
                     href="/contact" 
-                    className={ active === 4 ? styles.active : "" }
-                    onClick={() => {
-                        setActive(4);
-                        if (open) setOpen(false);
-                    }}
                 >
                     Contact
                 </Link>
             </nav>
 
             <div className={styles.icons}>
-                <div className={styles.circles}></div>
-                <div className={styles.circles}></div>
+                <GrTwitter size={35} className={styles.circles} />
+                <GrInstagram size={35} className={styles.circles} />
             </div>
 
             <div className={styles.hamburger} onClick={() => setOpen(!open)}>

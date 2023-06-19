@@ -9,9 +9,14 @@
     box-shadow: 0 0 5px var(--black);
 }
 
-.container h1 {
+.logo {
     font-size: 2rem;
-    pointer-events: none;
+    font-weight: bold;
+    transition: color 150ms ease-in;
+}
+
+.logo:hover {
+    color: var(--gold);
 }
 
 /* Nav & Link Elements */
@@ -58,10 +63,6 @@
     }
 }
 
-.active {
-    color: var(--gold);
-}
-
 /* Icons on the right */
 .icons {
     display: flex;
@@ -72,10 +73,31 @@
 }
 
 .circles {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: grey;
+    cursor: pointer;
+    transition: color 150ms ease-in;
+}
+
+.circles:hover {
+    color: var(--gold);
+}
+
+@media (-webkit-device-pixel-ratio: 1.25) {
+    .container { 
+        padding: 0.75rem 2.25rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .container nav {
+        font-size: 0.9375rem;
+    }
+
+    .circles {
+        width: 26.25px;
+        height: 26.25px;
+    }
 }
 
 /* Hamburger Menu for Mobile Devices */

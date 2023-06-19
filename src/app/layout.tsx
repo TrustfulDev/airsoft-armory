@@ -16,7 +16,7 @@ export default function RootLayout({
       <head>
         <link as="style" rel="stylesheet preload prefetch" href="https://use.typekit.net/lgn2vho.css" />
       </head>
-
+      
       <body>
         <Navbar />
 

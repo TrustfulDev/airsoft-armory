@@ -35,8 +35,9 @@
     margin: 1.8rem 0;
 }
 
-.info button {
+.info a {
     margin-top: 1rem;
+    display: inline-block;
 }
 
 @media screen and (max-width: 1535px) {
@@ -60,11 +61,13 @@
     gap: 25px;
 }
 
-.temp {
-    aspect-ratio: 1/1;
-    width: 50px;
-    background-color: var(--white);
-    border-radius: 50%;
+.circles {
+    cursor: pointer;
+    transition: color 150ms ease-in;
+}
+
+.circles:hover {
+    color: var(--gold);
 }
 
 @media screen and (min-width: 1921px) {

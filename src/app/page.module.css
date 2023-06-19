@@ -111,6 +111,33 @@
   height: 75%;
 }
 
+/* Handle devices that are on 125% window zoom */
+@media (-webkit-device-pixel-ratio: 1.25) {
+  .hero {
+    height: calc(100vh - 4.8rem);
+  }
+  
+  .herobg {
+    height: calc(100vh - 3.3rem);
+  }
+
+  .info h1 {
+    font-size: 6rem;
+  }
+  
+  .info h2 {
+    font-size: 3rem;
+  }
+  
+  .info p {
+    font-size: 0.9375rem;
+  }
+
+  .cards {
+    height: calc(100vh - 19.5rem);
+  }
+}
+
 @media screen and (max-width: 1125px) {
   .info h1 {
     font-size: 6rem;
@@ -131,7 +158,7 @@
   }
 }
 
-@media (max-height: 915px) {
+@media (max-height: 720px) {
   .cards {
     display: none;
   }
@@ -201,7 +228,7 @@
   align-items: center;
   justify-content: space-evenly;
   gap: 2rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .box {

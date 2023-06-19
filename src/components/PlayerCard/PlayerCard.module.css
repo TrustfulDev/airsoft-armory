@@ -11,6 +11,13 @@
     transition: all 150ms ease-in-out;
 }
 
+@media (-webkit-device-pixel-ratio: 1.25) {
+    .container {
+        min-width: 294.75px;
+        height: 472.5px;
+    }
+}
+
 .container:after,
 .container:before {
     content: "";
