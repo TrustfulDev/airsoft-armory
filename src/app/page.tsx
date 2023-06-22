@@ -39,7 +39,7 @@ export default function Home() {
             <div className={styles.btns}>
               <hr />
               <button className="button" onClick={learnMore}>Learn More</button>
-              <Link href="/contact" className="button">Talk to us</Link>
+              <Link href="/Contact" className="button">Talk to us</Link>
               <hr />
             </div>
           </Reveal>
